@@ -53,6 +53,11 @@ public class UiManager : MonoBehaviour {
 
     public void Reset()
     {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Home ()
+    {
         SceneManager.LoadScene(0);
     }
 	
