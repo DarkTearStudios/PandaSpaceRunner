@@ -71,7 +71,6 @@ GameObject:
   - component: {fileID: 2967501959750771216}
   - component: {fileID: 3009316761878293746}
   - component: {fileID: 4036113747126535528}
-  - component: {fileID: 2989505045447941517}
   m_Layer: 0
   m_Name: PlatformStart
   m_TagString: Untagged
@@ -130,6 +129,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -154,6 +154,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3009316761878293746
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -187,20 +188,3 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: a4232bc0299041c468267cac3926a7a7, type: 2}
---- !u!114 &2989505045447941517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2988594769094766926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 506c04c38a706d44a9442b98a0016903, type: 2}
