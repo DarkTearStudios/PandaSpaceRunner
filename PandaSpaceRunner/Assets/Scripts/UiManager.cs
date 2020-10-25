@@ -60,9 +60,14 @@ public class UiManager : MonoBehaviour {
     {
         SceneManager.LoadScene(0);
     }
-	
-	// Update is called once per frame
-	void Update () 
+
+    public void Shop()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    // Update is called once per frame
+    void Update () 
     {
 
         diamondCount.text = PlayerPrefs.GetInt("totalDiamonds").ToString();

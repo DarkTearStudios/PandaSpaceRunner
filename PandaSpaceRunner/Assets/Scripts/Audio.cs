@@ -5,6 +5,7 @@ public class Audio : MonoBehaviour
 {
 
     private static Audio instance = null;
+    
     public AudioClip[] musicbg;
     private int i;
 
@@ -28,7 +29,7 @@ public class Audio : MonoBehaviour
         }
         
     }
-
+    
     void Start()
     {
         i = Random.Range(0, musicbg.Length);

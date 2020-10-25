@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
     public bool gameOver;
-    
+    public GameObject Music;
     private void Awake()
     {
         if(instance == null)
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour {
     public void StartGame()
     {
         
+        Music.SetActive(true);
         UiManager.instance.GameStart();
         ScoreManager.instance.startScore();
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().startSpawiningPlatforms();
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver()
     {
+        Music.SetActive(false);
         UiManager.instance.GameOver();
         ScoreManager.instance.StopScore();
         gameOver = true;
