@@ -43,6 +43,16 @@ public class ScoreManager : MonoBehaviour {
        
     }
 
+    public void GreenDiamondCount()
+    {
+        score += 10;
+        totalDiamonds += 10;
+        PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
+        PlayerPrefs.Save();
+
+
+    }
+
     public void incrementScore()
     {
         score += 1;

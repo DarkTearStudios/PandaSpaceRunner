@@ -6,7 +6,6 @@ public class PlatformSpawner : MonoBehaviour {
 
     public GameObject platform;
     public GameObject diamonds;
-
     Vector3 lastPos;
     float size;
     public bool gameOver;
@@ -62,7 +61,9 @@ public class PlatformSpawner : MonoBehaviour {
         {
             Instantiate(diamonds, new Vector3(pos.x,pos.y+1,pos.z), diamonds.transform.rotation);
         }
-        
+
+       
+
     }
 
     void SpawnZ()
@@ -77,5 +78,7 @@ public class PlatformSpawner : MonoBehaviour {
         {
             Instantiate(diamonds, new Vector3(pos.x, pos.y + 1, pos.z), diamonds.transform.rotation);
         }
+
+        
     }
 }

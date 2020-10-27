@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Loading : MonoBehaviour
 {
+
+
     public Text textShowed = null;
     public void changeWord(string Loading)
     {

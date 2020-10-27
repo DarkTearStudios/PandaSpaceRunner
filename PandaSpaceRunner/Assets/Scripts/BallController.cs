@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BallController : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class BallController : MonoBehaviour
 	private float speed;
 	bool started;
 	bool gameOver;
+	
+	
 
 	Rigidbody rb;
 
@@ -25,6 +28,7 @@ public class BallController : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody>();
 		animator = GetComponent<Animator>();
+		
 	}
 
 	// Use this for initialization
@@ -33,6 +37,8 @@ public class BallController : MonoBehaviour
 
 		started = false;
 		gameOver = false;
+		speed = 8f;
+		
 	}
 
 	// Update is called once per frame
@@ -75,6 +81,7 @@ public class BallController : MonoBehaviour
 				{
 					fingerDownPos = touch.position;
 					DetectSwipe();
+					
 				}
 			}
 
@@ -83,9 +90,14 @@ public class BallController : MonoBehaviour
 			{
 				fingerDownPos = touch.position;
 				DetectSwipe();
+				
 			}
 		}
+
+		
 	}
+
+	
 
 	void DetectSwipe()
 	{
@@ -166,5 +178,7 @@ public class BallController : MonoBehaviour
 			ScoreManager.instance.diamondCount();
 
 		}
+
+		
 	}
 }
