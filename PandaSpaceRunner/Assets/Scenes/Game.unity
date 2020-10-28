@@ -1992,9 +1992,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86125fa5373386a49864b904fee45fb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressBar: {fileID: 0}
+  precentText: {fileID: 0}
+  LoadSlider: {fileID: 0}
   gameOverPanel: {fileID: 2010811533}
   tapText: {fileID: 280368891}
   diamondCountPanel: {fileID: 1065710035}
+  SpendGemCheck: {fileID: 0}
+  percentLoaded: {fileID: 0}
   diamondCount: {fileID: 1246647231}
   score: {fileID: 1120186377}
   highScore: {fileID: 1808643035}
@@ -2457,7 +2462,7 @@ GameObject:
   - component: {fileID: 1599056608}
   - component: {fileID: 1599056607}
   m_Layer: 0
-  m_Name: CharacterSelect
+  m_Name: CharacterPlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2472,21 +2477,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599056606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a32bd3f41647bf4f9501d383baa7448, type: 3}
+  m_Script: {fileID: 11500000, guid: bb2e8a9d763eaf9479df1182f0825d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Characterbool: 0000
-  Camera1bool: 0000
-  Backgroundbool: 0000
-  Character:
-  - {fileID: 681571053}
-  - {fileID: 954236586}
-  Camera1:
-  - {fileID: 1687258581}
-  - {fileID: 778381231}
-  Background:
-  - {fileID: 886276986}
-  - {fileID: 148673343}
+  CharacterSet: 000000000000000000000000000000000000000000000000
+  CameraSet: 000000000000000000000000000000000000000000000000
+  BackgroundSet: 000000000000000000000000000000000000000000000000
+  Character: []
+  Camera: []
+  Background: []
 --- !u!4 &1599056608
 Transform:
   m_ObjectHideFlags: 0
