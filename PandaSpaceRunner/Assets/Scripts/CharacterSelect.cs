@@ -18,15 +18,26 @@ public class CharacterSelect : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("Character0") == 1)
+        if(PlayerPrefs.HasKey("Character0"))
         {
-            Selector[0].GetComponent<Toggle>().isOn = true;
+            if (PlayerPrefs.GetInt("Character0") == 1)
+            {
+                Selector[0].GetComponent<Toggle>().isOn = true;
+            }
+
+            else
+            {
+                Selector[0].GetComponent<Toggle>().isOn = false;
+            }
         }
 
         else
         {
-            Selector[0].GetComponent<Toggle>().isOn = false;
+            Selector[0].GetComponent<Toggle>().isOn = true;
         }
+        
+
+        
 
 
         if (PlayerPrefs.GetInt("Character1") == 1)
@@ -87,8 +98,8 @@ public class CharacterSelect : MonoBehaviour
         Selector[1].GetComponent<Toggle>().interactable = true;
         Selector[2].GetComponent<Toggle>().interactable = true;
         Selector[3].GetComponent<Toggle>().interactable = true;
-        Selector[4].GetComponent<Toggle>().interactable = true;
-        Selector[5].GetComponent<Toggle>().interactable = true;
+        Selector[4].GetComponent<Toggle>().interactable = false;
+        Selector[5].GetComponent<Toggle>().interactable = false;
     }
 
     // Update is called once per frame
