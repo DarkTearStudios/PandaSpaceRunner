@@ -6,7 +6,7 @@ public class BallController : MonoBehaviour
 {
 
     public GameObject particle;
-    public GameObject GreenParticle;
+    
     Animator animator;
     [SerializeField]
     private float speed;

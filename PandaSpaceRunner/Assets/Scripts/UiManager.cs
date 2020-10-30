@@ -14,7 +14,9 @@ public class UiManager : MonoBehaviour {
     public GameObject gameOverPanel;
     public GameObject tapText;
     public GameObject diamondCountPanel;
-    public GameObject SpendGemCheck;
+    public GameObject NotEnough;
+    public GameObject [] SpendGemCheck;
+   
     public Text percentLoaded;
     public Text diamondCount;
     public Text score;
@@ -83,18 +85,70 @@ public class UiManager : MonoBehaviour {
 
     public void GemCheckOpen ()
     {
-        SpendGemCheck.SetActive(true);
+        SpendGemCheck[0].SetActive(true);
+    }
+
+    public void GemCheckOpen2()
+    {
+        SpendGemCheck[1].SetActive(true);
+    }
+
+    public void GemCheckOpen3()
+    {
+        SpendGemCheck[2].SetActive(true);
+    }
+
+    public void GemCheckOpen4()
+    {
+        SpendGemCheck[3].SetActive(true);
+    }
+
+    public void GemCheckOpen5()
+    {
+        SpendGemCheck[4].SetActive(true);
     }
 
     public void GemCheckClose()
     {
-        SpendGemCheck.SetActive(false);
+        SpendGemCheck[0].SetActive(false);
     }
 
-    public void GemCheckBuy()
+    public void GemCheckClose2()
     {
-
+        SpendGemCheck[1].SetActive(false);
     }
+
+    public void GemCheckClose3()
+    {
+        SpendGemCheck[2].SetActive(false);
+    }
+
+    public void GemCheckClose4()
+    {
+        SpendGemCheck[3].SetActive(false);
+    }
+
+    public void GemCheckClose5()
+    {
+        SpendGemCheck[4].SetActive(false);
+    }
+
+    public void NotEnoughOpen()
+    {
+        NotEnough.SetActive(true);
+    }
+
+    public void NotEnoughClose()
+    {
+        NotEnough.SetActive(false);
+    }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+
 
     // Update is called once per frame
     void Update () 
@@ -104,6 +158,8 @@ public class UiManager : MonoBehaviour {
         progressBar.value = Mathf.Clamp01(loadingOperation.progress / 0.9f);
         float progressValue = Mathf.Clamp01(loadingOperation.progress / 0.9f);
         percentLoaded.text = Mathf.Round(progressValue * 100) + "%";
+
+        
 
     }
 }
