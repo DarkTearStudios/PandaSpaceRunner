@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
     public bool gameOver;
     public GameObject Music;
     public int MusicToggle;
+    public int ShowAd;
     private void Awake()
     {
         if(instance == null)
@@ -17,12 +18,18 @@ public class GameManager : MonoBehaviour {
             instance = this;
         }
         MusicToggle = PlayerPrefs.GetInt("Mute");
+        ShowAd = PlayerPrefs.GetInt("ShowAd");
     }
 
 	// Use this for initialization
 	void Start ()
     {
         gameOver = false;
+
+        if (ShowAd < 5)
+        {
+
+        }
 	}
 	
 	// Update is called once per frame
