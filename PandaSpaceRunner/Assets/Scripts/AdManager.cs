@@ -6,16 +6,30 @@ using UnityEngine.Advertisements;
 public class AdManager : MonoBehaviour
 {
     public int ShowAdCount;
+    
+
 
     public void Awake()
     {
         ShowAdCount = PlayerPrefs.GetInt("ShowAdCount");
     }
 
+    public void Update()
+    {
+        
+    }
+
+
     public void Start()
     {
-        Advertisement.Initialize("3883671");
-        Advertisement.Initialize("3883670");
+
+        #if UNITY_ANDROID
+                Advertisement.Initialize("3883671");
+        #else 
+                Advertisement.Initialize("3883670");
+
+        #endif
+       
     }
 
     public void ShowAd()
@@ -34,9 +48,8 @@ public class AdManager : MonoBehaviour
         }
     }
 
-    public void ShowAdTest()
+    public void ShowRewardAd()
     {
-        Advertisement.Show();
-        Debug.Log("AdTest");
+        
     }
 }

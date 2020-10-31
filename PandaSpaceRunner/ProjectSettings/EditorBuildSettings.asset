@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game.unity
     guid: 83ac5f1d4e44b944b9e782b8b70312e1
   - enabled: 1
-    path: Assets/Scenes/Shop.unity
+    path: Assets/Scenes/CharacterSelect.unity
     guid: 788208a07237a4f4bbde926668c050c3
   - enabled: 1
     path: Assets/Scenes/Settings.unity

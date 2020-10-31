@@ -16,11 +16,13 @@ public class UiManager : MonoBehaviour {
     public GameObject diamondCountPanel;
     public GameObject NotEnough;
     public GameObject [] SpendGemCheck;
+    public int test;
    
     public Text percentLoaded;
     public Text diamondCount;
     public Text score;
     public Text highScore;
+    public Text totalDiamonds;
 
     void Awake()
     {
@@ -56,7 +58,8 @@ public class UiManager : MonoBehaviour {
         score.text = PlayerPrefs.GetInt ("score").ToString();
         highScore.text = PlayerPrefs.GetInt("highScore").ToString();
         gameOverPanel.SetActive(true);
-        diamondCountPanel.SetActive(false);
+        totalDiamonds.text = ScoreManager.instance.doubleDiamonds.ToString();
+        
         
     }
 
@@ -148,6 +151,8 @@ public class UiManager : MonoBehaviour {
         SceneManager.LoadScene(3);
     }
 
+    
+
 
 
     // Update is called once per frame
@@ -158,8 +163,6 @@ public class UiManager : MonoBehaviour {
         progressBar.value = Mathf.Clamp01(loadingOperation.progress / 0.9f);
         float progressValue = Mathf.Clamp01(loadingOperation.progress / 0.9f);
         percentLoaded.text = Mathf.Round(progressValue * 100) + "%";
-
-        
 
     }
 }

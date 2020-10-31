@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour {
     public int score;
     public int highScore;
     public int totalDiamonds;
+    public int doubleDiamonds;
 
     private void Awake()
     {
@@ -22,9 +23,6 @@ public class ScoreManager : MonoBehaviour {
         score = 0;
         totalDiamonds = PlayerPrefs.GetInt("totalDiamonds", 0);
         PlayerPrefs.SetInt("score", score);
-        
-
-        
     }
 	
 	// Update is called once per frame
@@ -37,26 +35,27 @@ public class ScoreManager : MonoBehaviour {
     {
         score += 1;
         totalDiamonds +=  1;
+        doubleDiamonds += 1;
         PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
         PlayerPrefs.Save();
         
        
     }
 
+    public void DoubleDiamonds()
+    {
+        totalDiamonds += doubleDiamonds;
+        PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
+
+    }
+
     public void diamondSubtract ()
     {
         totalDiamonds = totalDiamonds - 1000;
-    }
-
-    public void GreenDiamondCount()
-    {
-        score += 10;
-        totalDiamonds += 10;
         PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
-        PlayerPrefs.Save();
-
-
     }
+
+    
 
     public void incrementScore()
     {
