@@ -6,11 +6,7 @@ using UnityEngine.Advertisements;
 public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
 {
     public GameObject RewardButton;
-    public GameObject GemAnimation;
-    public GameObject NewGemAmount;
-    public GameObject OldGemAmount;
-    public Text NewGemText;
-    public int NewGemInt;
+    
     
     
 
@@ -36,7 +32,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         // Initialize the Ads listener and service:
         Advertisement.AddListener(this);
         Advertisement.Initialize(gameId, true);
-        NewGemAmount.SetActive(false);
+        
     }
 
     // Implement a function for showing a rewarded video ad:
@@ -67,13 +63,11 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         if (showResult == ShowResult.Finished)
         {
 
-            GemAnimation.SetActive(true);
+            
 
             
 
-            NewGemInt = ScoreManager.instance.doubleDiamonds * 2;
-
-            NewGemText.text = NewGemInt.ToString();
+            
 
 
         }
@@ -87,12 +81,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         }
     }
 
-    public void NeGemtext()
-    {
-        OldGemAmount.SetActive(false);
-
-        NewGemAmount.SetActive(true);
-    }
+    
 
     public void OnUnityAdsDidError(string message)
     {

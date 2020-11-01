@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
 
@@ -9,6 +10,12 @@ public class ScoreManager : MonoBehaviour {
     public int highScore;
     public int totalDiamonds;
     public int doubleDiamonds;
+    public GameObject NewGemAmount;
+    public GameObject OldGemAmount;
+    public GameObject GemAnimation;
+    public Text NewGemText;
+    public int NewGemInt;
+
 
     private void Awake()
     {
@@ -47,6 +54,15 @@ public class ScoreManager : MonoBehaviour {
         totalDiamonds += doubleDiamonds;
         PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
 
+    }
+    public void DoubleDiamondText()
+    {
+        NewGemInt = doubleDiamonds * 2;
+
+        NewGemText.text = NewGemInt.ToString();
+
+        OldGemAmount.SetActive(false);
+        NewGemAmount.SetActive(true);
     }
 
     public void diamondSubtract ()
