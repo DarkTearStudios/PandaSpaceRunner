@@ -31,7 +31,7 @@ public class BuyCheck2 : MonoBehaviour
 
     public void Buy()
     {
-        if (TotalDiamonds > 1000)
+        if (TotalDiamonds >= 1000)
         {
             TotalDiamonds = TotalDiamonds - 1000;
             PlayerPrefs.SetInt("totalDiamonds", TotalDiamonds);
