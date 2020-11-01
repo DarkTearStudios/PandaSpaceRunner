@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager instance;
     public bool gameOver;
+    public bool GameOverSoundisPlaying;
+    public GameObject GameOverSoundObject;
+    public AudioClip GameOverAudioClip;
+    AudioSource GameoverAudio;
     public GameObject Music;
     public int MusicToggle;
     public int ShowAd;
@@ -25,11 +29,12 @@ public class GameManager : MonoBehaviour {
 	void Start ()
     {
         gameOver = false;
-
+        GameoverAudio = GameOverSoundObject.GetComponent<AudioSource>();
         if (ShowAd < 5)
         {
 
         }
+        GameOverSoundisPlaying = false;
 	}
 	
 	// Update is called once per frame
@@ -61,7 +66,14 @@ public class GameManager : MonoBehaviour {
         Music.SetActive(false);
         UiManager.instance.GameOver();
         ScoreManager.instance.StopScore();
+        if (!GameOverSoundisPlaying)
+        {
+            GameoverAudio.PlayOneShot(GameOverAudioClip, 0.3f);
+            GameOverSoundisPlaying = true;
+        }
+        
         gameOver = true;
+        
     }
     public void AndroidButtons()
     {

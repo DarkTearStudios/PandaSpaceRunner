@@ -16,7 +16,7 @@ public class UiManager : MonoBehaviour {
     public GameObject diamondCountPanel;
     public GameObject NotEnough;
     public GameObject [] SpendGemCheck;
-    public int test;
+    
    
     public Text percentLoaded;
     public Text diamondCount;

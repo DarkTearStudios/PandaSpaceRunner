@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
-
+    public static BallController instance;
     public GameObject particle;
     
     Animator animator;
@@ -14,6 +14,12 @@ public class BallController : MonoBehaviour
     bool gameOver;
     bool running;
     Rigidbody rb;
+    public GameObject GemPickupSoundObject;
+    
+    public AudioClip GemPickupAudioClip;
+    
+    AudioSource GemPickupAudio;
+    
 
 
     private void Awake()
@@ -29,6 +35,8 @@ public class BallController : MonoBehaviour
         started = false;
         gameOver = false;
         running = false;
+        GemPickupAudio = GemPickupSoundObject.GetComponent<AudioSource>();
+       
     }
 
     // Update is called once per frame
@@ -42,7 +50,6 @@ public class BallController : MonoBehaviour
                 started = true;
                 animator.SetLayerWeight(animator.GetLayerIndex("RunForward"), 1f);
                 
-
                 GameManager.instance.StartGame();
             }
         }
@@ -57,6 +64,8 @@ public class BallController : MonoBehaviour
             Camera.main.GetComponent<CameraFollow>().gameOver = true;
 
             GameManager.instance.GameOver();
+
+            
         }
 
         if (Input.GetMouseButtonDown(0) && !gameOver)
@@ -64,6 +73,7 @@ public class BallController : MonoBehaviour
             SwitchDirection();
         }
     }
+
 
     void SwitchDirection()
     {
@@ -94,6 +104,7 @@ public class BallController : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(part, 1f);
             ScoreManager.instance.diamondCount();
+            GemPickupAudio.PlayOneShot(GemPickupAudioClip, 0.5f);
 
         }
 

@@ -47,6 +47,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         
     }
 
+  
+
     // Implement IUnityAdsListener interface methods:
     public void OnUnityAdsReady(string placementId)
     {
@@ -60,14 +62,14 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
     {
         // Define conditional logic for each ad completion status:
+        
+        
         if (showResult == ShowResult.Finished)
         {
 
             GemAnimation.SetActive(true);
 
-            OldGemAmount.SetActive(false);
-
-            NewGemAmount.SetActive(true);
+            
 
             NewGemInt = ScoreManager.instance.doubleDiamonds * 2;
 
@@ -83,6 +85,13 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsListener
         {
             Debug.LogWarning("The ad did not finish due to an error.");
         }
+    }
+
+    public void NeGemtext()
+    {
+        OldGemAmount.SetActive(false);
+
+        NewGemAmount.SetActive(true);
     }
 
     public void OnUnityAdsDidError(string message)
