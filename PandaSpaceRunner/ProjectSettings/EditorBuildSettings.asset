@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 1b1fbbab599d97746bc07fd131e95d80
+  - enabled: 1
+    path: Assets/EasterEgg/Scenes/Game.unity
+    guid: 34b0d22a5f961af4ca124516b17e1427
+  - enabled: 1
+    path: Assets/EasterEgg/Scenes/license.unity
+    guid: 173faa6575fa5f345a21fde0b8e804ec
   m_configObjects: {}
