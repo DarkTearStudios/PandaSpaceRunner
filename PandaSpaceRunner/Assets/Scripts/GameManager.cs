@@ -13,8 +13,12 @@ public class GameManager : MonoBehaviour {
     public AudioClip GameOverAudioClip;
     AudioSource GameoverAudio;
     public GameObject Music;
+    public GameObject FX;
     public int MusicToggle;
+    public int FXToggle;
     public int ShowAd;
+
+
     private void Awake()
     {
         if(instance == null)
@@ -22,7 +26,20 @@ public class GameManager : MonoBehaviour {
             instance = this;
         }
         MusicToggle = PlayerPrefs.GetInt("Mute");
+        FXToggle = PlayerPrefs.GetInt("MuteFX");
         ShowAd = PlayerPrefs.GetInt("ShowAd");
+
+
+        if (FXToggle == 0)
+        {
+            FX.SetActive(true);
+
+        }
+
+        else
+        {
+            FX.SetActive(false);
+        }
     }
 
 	// Use this for initialization
@@ -35,7 +52,8 @@ public class GameManager : MonoBehaviour {
 
         }
         GameOverSoundisPlaying = false;
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
@@ -55,7 +73,9 @@ public class GameManager : MonoBehaviour {
         {
             Music.SetActive(false);
         }
-       
+        
+
+
         UiManager.instance.GameStart();
         ScoreManager.instance.startScore();
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().startSpawiningPlatforms();

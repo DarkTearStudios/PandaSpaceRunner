@@ -4522,7 +4522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1025241633
 Transform:
   m_ObjectHideFlags: 0
@@ -8695,7 +8695,9 @@ MonoBehaviour:
   GameOverSoundObject: {fileID: 0}
   GameOverAudioClip: {fileID: 0}
   Music: {fileID: 0}
+  FX: {fileID: 1604400606}
   MusicToggle: 0
+  FXToggle: 0
   ShowAd: 0
 --- !u!4 &1900266281
 Transform:
