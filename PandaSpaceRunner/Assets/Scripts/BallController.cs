@@ -10,6 +10,8 @@ public class BallController : MonoBehaviour
     Animator animator;
     [SerializeField]
     private float speed;
+    public float SpeedIncreaseAmount;
+    public float MaxSpeed;
     bool started;
     bool gameOver;
     bool running;
@@ -42,6 +44,8 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+
         if (!started)
         {
             if (Input.GetMouseButtonDown(0))
@@ -49,8 +53,9 @@ public class BallController : MonoBehaviour
                 rb.velocity = new Vector3(speed, 0, 0);
                 started = true;
                 animator.SetLayerWeight(animator.GetLayerIndex("RunForward"), 1f);
-                
                 GameManager.instance.StartGame();
+                
+
             }
         }
 
@@ -72,8 +77,24 @@ public class BallController : MonoBehaviour
         {
             SwitchDirection();
         }
+
+        if (!gameOver && started)
+        {
+            IncreaseSpeed();
+        }
     }
 
+    void IncreaseSpeed()
+    {
+        if (speed < MaxSpeed)
+        {
+            speed += SpeedIncreaseAmount * Time.deltaTime;
+        }
+        else
+        {
+            speed = MaxSpeed;
+        }
+    }
 
     void SwitchDirection()
     {
@@ -110,4 +131,6 @@ public class BallController : MonoBehaviour
 
         
     }
+
+    
 }

@@ -276,6 +276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!136 &8929987
@@ -285,7 +287,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8929985}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -303,10 +305,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &8929990 stripped
 Transform:
@@ -1214,6 +1216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!136 &77779765
@@ -1223,7 +1227,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77779762}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -1241,10 +1245,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &80877401 stripped
 GameObject:
@@ -5894,6 +5898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!136 &377420047
@@ -5903,7 +5909,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377420045}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -5921,10 +5927,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1001 &379259805
 PrefabInstance:
@@ -11079,6 +11085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!136 &681571055
@@ -11088,7 +11096,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681571053}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -11106,10 +11114,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!4 &681571058 stripped
 Transform:
@@ -12545,6 +12553,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!136 &777293271
@@ -12554,7 +12564,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777293268}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -12572,10 +12582,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &778381231
 GameObject:
@@ -16774,6 +16784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particle: {fileID: 1268696182640672, guid: bed303fee43a0a2419d98cdc5e3248b6, type: 3}
   speed: 8
+  SpeedIncreaseAmount: 0.04
+  MaxSpeed: 10
   GemPickupSoundObject: {fileID: 943107103}
   GemPickupAudioClip: {fileID: 8300000, guid: 51dad49352432cb479c95dcf6dda19ee, type: 3}
 --- !u!4 &954236589 stripped
@@ -16793,10 +16805,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &954236591
 CapsuleCollider:
@@ -16805,7 +16817,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954236586}
-  m_Material: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3, type: 2}
+  m_Material: {fileID: 13400000, guid: a6ac9dc7000147042b17f04ca7e4fe43, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.7396014
@@ -23270,6 +23282,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65843873232672284, guid: 94f1a562e8bd0794c8c5d1d992d76127,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: db2249b68d5024840a113557d85ef9a3,
+        type: 2}
     m_RemovedComponents:
     - {fileID: -6048138938157799082, guid: 94f1a562e8bd0794c8c5d1d992d76127, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 94f1a562e8bd0794c8c5d1d992d76127, type: 3}
