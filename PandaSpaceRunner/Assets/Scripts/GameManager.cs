@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour {
 	void Update ()
     {
         AndroidButtons();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ScreenCapture.CaptureScreenshot("Screenshot");
+        }
     }
 
     public void StartGame()
