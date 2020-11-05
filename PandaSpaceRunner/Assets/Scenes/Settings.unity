@@ -1808,7 +1808,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1873590062}
-        m_TargetAssemblyTypeName: MuteToggle, Assembly-CSharp
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
         m_MethodName: Muter
         m_Mode: 1
         m_Arguments:
@@ -1976,7 +1976,7 @@ GameObject:
   - component: {fileID: 1873590063}
   - component: {fileID: 1873590062}
   m_Layer: 0
-  m_Name: Mute
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1991,13 +1991,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1873590061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 880830f4e56736e4eb1bbe819804212d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84bdd849f8fa3a84baa9fb00c7ba30f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Mute: 0
   MuteFX: 0
   MuterSwitch: {fileID: 1688539618}
   MuterFXSwitch: {fileID: 1962801471}
+  musicbg: []
 --- !u!4 &1873590063
 Transform:
   m_ObjectHideFlags: 0
@@ -2228,7 +2229,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1873590062}
-        m_TargetAssemblyTypeName: MuteToggle, Assembly-CSharp
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
         m_MethodName: MuterFX
         m_Mode: 1
         m_Arguments:

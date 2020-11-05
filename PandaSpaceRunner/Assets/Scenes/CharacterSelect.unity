@@ -358,9 +358,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1819467413}
-        m_TargetAssemblyTypeName: BuyCheck3, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2082187292}
+        m_TargetAssemblyTypeName: BuyChecker, Assembly-CSharp
+        m_MethodName: Buy3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -595,54 +595,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186757332}
   m_CullTransparentMesh: 0
---- !u!1 &195837067
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 195837068}
-  - component: {fileID: 195837069}
-  m_Layer: 0
-  m_Name: BuyCheck (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &195837068
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195837067}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2082187291}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &195837069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195837067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fc6471562f01234f88895d07c40fbbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyCheckButton: {fileID: 518606055}
-  DiamondsCost: {fileID: 1355434192}
-  Toggle: {fileID: 1472986224}
-  BuyCheck: 0
-  TotalDiamonds: 0
 --- !u!1 &212390701
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,18 +680,18 @@ RectTransform:
   m_GameObject: {fileID: 212390701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56554955, y: 0.56554955, z: 0.56554955}
   m_Children:
   - {fileID: 906946411}
   - {fileID: 961212911}
   - {fileID: 1190046926}
-  m_Father: {fileID: 1964119219}
-  m_RootOrder: 3
+  m_Father: {fileID: 1302479143}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4233093, y: 0.76174927}
-  m_SizeDelta: {x: -42.84662, y: -361.5235}
+  m_AnchoredPosition: {x: -20.629393, y: 29.6732}
+  m_SizeDelta: {x: 393.33167, y: 347.64752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &302948532
 GameObject:
@@ -1193,54 +1145,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 432254011}
   m_CullTransparentMesh: 0
---- !u!1 &475878716
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475878717}
-  - component: {fileID: 475878718}
-  m_Layer: 0
-  m_Name: BuyCheck (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &475878717
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475878716}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2082187291}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &475878718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475878716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61d73422115735c41a4692d63f4de2db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyCheckButton: {fileID: 557409202}
-  DiamondsCost: {fileID: 958352904}
-  Toggle: {fileID: 1065352242}
-  BuyCheck: 0
-  TotalDiamonds: 0
 --- !u!1 &486432021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,9 +1282,9 @@ RectTransform:
   m_Father: {fileID: 486432025}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -42, y: 71}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 125, y: -362}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &515749677
@@ -1621,54 +1525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518606055}
   m_CullTransparentMesh: 0
---- !u!1 &520990105
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520990106}
-  - component: {fileID: 520990107}
-  m_Layer: 0
-  m_Name: BuyCheck (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &520990106
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520990105}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2082187291}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &520990107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520990105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304d7d6d3bea5f7479aeb5e04c45f915, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyCheckButton: {fileID: 678140281}
-  DiamondsCost: {fileID: 1194122501}
-  Toggle: {fileID: 1483360160}
-  BuyCheck: 0
-  TotalDiamonds: 0
 --- !u!1 &521540333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,9 +1607,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 195837069}
-        m_TargetAssemblyTypeName: BuyCheck1, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2082187292}
+        m_TargetAssemblyTypeName: BuyChecker, Assembly-CSharp
+        m_MethodName: Buy1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1965,7 +1821,7 @@ GameObject:
   - component: {fileID: 557409205}
   - component: {fileID: 557409204}
   m_Layer: 5
-  m_Name: GemCheckButton (1)
+  m_Name: GemCheckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,18 +1968,18 @@ RectTransform:
   m_GameObject: {fileID: 571754286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56554955, y: 0.56554955, z: 0.56554955}
   m_Children:
   - {fileID: 1194654551}
   - {fileID: 521540334}
   - {fileID: 2124438497}
-  m_Father: {fileID: 1964119219}
-  m_RootOrder: 2
+  m_Father: {fileID: 1302479143}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4233093, y: 0.76174927}
-  m_SizeDelta: {x: -42.84662, y: -361.5235}
+  m_AnchoredPosition: {x: -20.629393, y: 29.6732}
+  m_SizeDelta: {x: 393.33167, y: 347.64752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571754288
 MonoBehaviour:
@@ -2412,9 +2268,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520990107}
-        m_TargetAssemblyTypeName: BuyCheck5, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2082187292}
+        m_TargetAssemblyTypeName: BuyChecker, Assembly-CSharp
+        m_MethodName: Buy5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2631,7 +2487,7 @@ RectTransform:
   - {fileID: 642887428}
   - {fileID: 1922654952}
   m_Father: {fileID: 1964119219}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4382,9 +4238,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642861501}
-        m_TargetAssemblyTypeName: BuyCheck2, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2082187292}
+        m_TargetAssemblyTypeName: BuyChecker, Assembly-CSharp
+        m_MethodName: Buy2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4902,10 +4758,10 @@ RectTransform:
   m_Father: {fileID: 486432025}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155, y: -25}
-  m_SizeDelta: {x: 303.20657, y: 41.023743}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -71, y: 399}
+  m_SizeDelta: {x: -161.79343, y: -784.97626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1119553021
 GameObject:
@@ -5880,6 +5736,41 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
+--- !u!1 &1302479142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302479143}
+  m_Layer: 0
+  m_Name: BuyCheckPannels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302479143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302479142}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.053402, y: -51.706146, z: 0}
+  m_LocalScale: {x: 1.7681916, y: 1.7681916, z: 1.7681916}
+  m_Children:
+  - {fileID: 571754287}
+  - {fileID: 212390705}
+  - {fileID: 2005876664}
+  - {fileID: 1942415782}
+  - {fileID: 1867631169}
+  m_Father: {fileID: 1964119219}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321948063
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,9 +5853,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 475878718}
-        m_TargetAssemblyTypeName: BuyCheck4, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2082187292}
+        m_TargetAssemblyTypeName: BuyChecker, Assembly-CSharp
+        m_MethodName: Buy4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6569,7 +6460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1404221852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.392197, y: -196, z: 0}
+  m_LocalPosition: {x: -35.392197, y: -216, z: 0}
   m_LocalScale: {x: 1.7388018, y: 1.7388018, z: 1.7388018}
   m_Children:
   - {fileID: 380444732}
@@ -7576,54 +7467,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629793328}
   m_CullTransparentMesh: 0
---- !u!1 &1642861499
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1642861500}
-  - component: {fileID: 1642861501}
-  m_Layer: 0
-  m_Name: BuyCheck (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1642861500
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642861499}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2082187291}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1642861501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642861499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a371c3ed160c9714abf8744ac1bd85ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyCheckButton: {fileID: 1864138261}
-  DiamondsCost: {fileID: 723224032}
-  Toggle: {fileID: 136970370}
-  BuyCheck: 0
-  TotalDiamonds: 0
 --- !u!1 &1650491215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8251,54 +8094,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753782010}
   m_CullTransparentMesh: 0
---- !u!1 &1819467411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1819467412}
-  - component: {fileID: 1819467413}
-  m_Layer: 0
-  m_Name: BuyCheck (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1819467412
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819467411}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2082187291}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1819467413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819467411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9729853e2cf9054fa39f4c069641f76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyCheckButton: {fileID: 1894480057}
-  DiamondsCost: {fileID: 15975074}
-  Toggle: {fileID: 1285373658}
-  BuyCheck: 0
-  TotalDiamonds: 0
 --- !u!1 &1864138261
 GameObject:
   m_ObjectHideFlags: 0
@@ -8312,7 +8107,7 @@ GameObject:
   - component: {fileID: 1864138264}
   - component: {fileID: 1864138263}
   m_Layer: 5
-  m_Name: GemCheckButton (1)
+  m_Name: GemCheckButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8516,18 +8311,18 @@ RectTransform:
   m_GameObject: {fileID: 1867631165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56554955, y: 0.56554955, z: 0.56554955}
   m_Children:
   - {fileID: 595181046}
   - {fileID: 607370009}
   - {fileID: 1527632064}
-  m_Father: {fileID: 1964119219}
-  m_RootOrder: 6
+  m_Father: {fileID: 1302479143}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4233093, y: 0.76174927}
-  m_SizeDelta: {x: -42.84662, y: -361.5235}
+  m_AnchoredPosition: {x: -20.629393, y: 29.6732}
+  m_SizeDelta: {x: 393.33167, y: 347.64752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1894480057
 GameObject:
@@ -9163,18 +8958,18 @@ RectTransform:
   m_GameObject: {fileID: 1942415778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56554955, y: 0.56554955, z: 0.56554955}
   m_Children:
   - {fileID: 1986776661}
   - {fileID: 1321948064}
   - {fileID: 1235201817}
-  m_Father: {fileID: 1964119219}
-  m_RootOrder: 5
+  m_Father: {fileID: 1302479143}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4233093, y: 0.76174927}
-  m_SizeDelta: {x: -42.84662, y: -361.5235}
+  m_AnchoredPosition: {x: -20.629393, y: 29.6732}
+  m_SizeDelta: {x: 393.33167, y: 347.64752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1944107138
 GameObject:
@@ -9278,25 +9073,21 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964119218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1400279422}
   - {fileID: 1404221854}
-  - {fileID: 571754287}
-  - {fileID: 212390705}
-  - {fileID: 2005876664}
-  - {fileID: 1942415782}
-  - {fileID: 1867631169}
+  - {fileID: 1302479143}
   - {fileID: 624251095}
   m_Father: {fileID: 486432025}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 401.59875, y: 650.36584}
+  m_AnchoredPosition: {x: 0.99989384, y: 25.199972}
+  m_SizeDelta: {x: 436.17828, y: 709.171}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1964119220
 MonoBehaviour:
@@ -9549,18 +9340,18 @@ RectTransform:
   m_GameObject: {fileID: 2005876660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.56554955, y: 0.56554955, z: 0.56554955}
   m_Children:
   - {fileID: 2106139924}
   - {fileID: 115837121}
   - {fileID: 782858023}
-  m_Father: {fileID: 1964119219}
-  m_RootOrder: 4
+  m_Father: {fileID: 1302479143}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4233093, y: 0.76174927}
-  m_SizeDelta: {x: -42.84662, y: -361.5235}
+  m_AnchoredPosition: {x: -20.629393, y: 29.6732}
+  m_SizeDelta: {x: 393.33167, y: 347.64752}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2049779284
 GameObject:
@@ -9725,8 +9516,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2082187291}
+  - component: {fileID: 2082187292}
   m_Layer: 0
-  m_Name: BuyChecks
+  m_Name: BuyCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9742,15 +9534,42 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 138.47235, y: 314.11404, z: -15.747665}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 195837068}
-  - {fileID: 1642861500}
-  - {fileID: 1819467412}
-  - {fileID: 475878717}
-  - {fileID: 520990106}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2082187292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082187290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a82518a29ee20d4a8ca109729143933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuyCheckButton:
+  - {fileID: 518606055}
+  - {fileID: 1864138261}
+  - {fileID: 1894480057}
+  - {fileID: 557409202}
+  - {fileID: 678140281}
+  DiamondsCost:
+  - {fileID: 1355434192}
+  - {fileID: 723224032}
+  - {fileID: 15975074}
+  - {fileID: 958352904}
+  - {fileID: 1194122501}
+  Toggle:
+  - {fileID: 1472986224}
+  - {fileID: 136970370}
+  - {fileID: 1285373658}
+  - {fileID: 1065352242}
+  - {fileID: 1483360160}
+  BuyCheck: 0
+  TotalDiamonds: 0
 --- !u!1 &2106139923
 GameObject:
   m_ObjectHideFlags: 0

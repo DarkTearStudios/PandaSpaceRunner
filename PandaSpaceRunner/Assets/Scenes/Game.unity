@@ -19301,6 +19301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84bdd849f8fa3a84baa9fb00c7ba30f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Mute: 0
+  MuteFX: 0
+  MuterSwitch: {fileID: 0}
+  MuterFXSwitch: {fileID: 0}
   musicbg:
   - {fileID: 8300000, guid: 59fd13c2978e6ab488a74a20cfd30e8d, type: 3}
   - {fileID: 8300000, guid: 0518ca324d4474c9192a84f9d28f1913, type: 3}
