@@ -15,6 +15,7 @@ public class ScoreManager : MonoBehaviour {
     public GameObject GemAnimation;
     public Text NewGemText;
     public int NewGemInt;
+    public int ccheck;
 
 
     private void Awake()
@@ -23,6 +24,8 @@ public class ScoreManager : MonoBehaviour {
         {
             instance = this;
         }
+
+        ccheck = PlayerPrefs.GetInt("ccheck");
     }
 
 	// Use this for initialization
@@ -43,6 +46,11 @@ public class ScoreManager : MonoBehaviour {
         score += 1;
         totalDiamonds +=  1;
         doubleDiamonds += 1;
+        if (totalDiamonds == 999 || totalDiamonds == 1000 )
+        {
+            ccheck = 1;
+            PlayerPrefs.SetInt("ccheck", ccheck);
+        }
         PlayerPrefs.SetInt("totalDiamonds", totalDiamonds);
         PlayerPrefs.Save();
         

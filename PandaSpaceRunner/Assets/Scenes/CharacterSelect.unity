@@ -2047,6 +2047,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2062,6 +2067,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -2074,16 +2084,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2984883210342921156, guid: 7683cce1bfbdb7c439f5192ed822c63d,
         type: 3}
@@ -5232,6 +5232,8 @@ MonoBehaviour:
   LoadSlider: {fileID: 0}
   gameOverPanel: {fileID: 0}
   tapText: {fileID: 0}
+  Tutorial: {fileID: 0}
+  tut: 0
   diamondCountPanel: {fileID: 1065710035}
   NotEnough: {fileID: 624251091}
   SpendGemCheck:
@@ -5941,6 +5943,7 @@ MonoBehaviour:
   GemAnimation: {fileID: 0}
   NewGemText: {fileID: 0}
   NewGemInt: 0
+  ccheck: 0
 --- !u!4 &1331851878
 Transform:
   m_ObjectHideFlags: 0
@@ -7662,34 +7665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 3.5
-  positionLerpTime: 0.2
-  mouseSensitivityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.5
-      inSlope: 0
-      outSlope: 5
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 2.5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  rotationLerpTime: 0.01
-  invertY: 0
 --- !u!20 &1687258584
 Camera:
   m_ObjectHideFlags: 0

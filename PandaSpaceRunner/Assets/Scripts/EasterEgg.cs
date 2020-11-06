@@ -13,6 +13,7 @@ public class EasterEgg : MonoBehaviour
     public int totalDiamonds;
     public GameObject BuyCheckPanel;
     public GameObject NotEnoughGemsPanel;
+    
 
     // Start is called before the first frame update
     void Start()

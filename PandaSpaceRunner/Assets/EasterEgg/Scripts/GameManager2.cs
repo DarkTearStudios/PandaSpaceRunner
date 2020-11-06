@@ -10,6 +10,10 @@ public enum GameStates{
 }
 	
 public class GameManager2 : MonoBehaviour {
+
+	public GameObject Logo;
+	public int ccheck;
+	public int isBought;
 	[Header("Text")]
 	public Text scoreText;
 	public Text newBestScoreText; 
@@ -28,8 +32,8 @@ public class GameManager2 : MonoBehaviour {
 	public GameStates currentState;
 	private int score;
 
-    
 
+    
     public void Update()
     {
 		AndroidButtons();
@@ -38,6 +42,12 @@ public class GameManager2 : MonoBehaviour {
     void Awake () {
 		instance = this;
 		currentState = GameStates.PREGAME; //Begin with PREGAME state
+		ccheck = PlayerPrefs.GetInt("ccheck");
+		isBought = PlayerPrefs.GetInt("isBought");
+		if (ccheck == 1 && isBought == 1 )
+        {
+			Logo.SetActive(true);
+        }
 	}
 
 	public void addScore(){

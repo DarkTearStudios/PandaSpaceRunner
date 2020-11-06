@@ -13,6 +13,8 @@ public class UiManager : MonoBehaviour {
     public GameObject LoadSlider;
     public GameObject gameOverPanel;
     public GameObject tapText;
+    public GameObject Tutorial;
+    public int tut;
     public GameObject diamondCountPanel;
     public GameObject NotEnough;
     public GameObject [] SpendGemCheck;
@@ -31,6 +33,17 @@ public class UiManager : MonoBehaviour {
             instance = this;
         }
 
+        tut = PlayerPrefs.GetInt("tut");
+
+        if (tut > 4)
+        {
+            Tutorial.SetActive(false);
+        }
+
+        if (tut > 5)
+        {
+            tut = 5;
+        } 
     }
 
     
@@ -44,6 +57,10 @@ public class UiManager : MonoBehaviour {
 
     public void GameStart()
     {
+        
+        Tutorial.SetActive(false);
+        tut += 1;
+        PlayerPrefs.SetInt("tut", tut);
         tapText.SetActive(false);
         diamondCountPanel.SetActive(true);
         score.text = PlayerPrefs.GetInt("score").ToString();

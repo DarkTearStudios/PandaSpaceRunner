@@ -20,7 +20,7 @@ public class GiveGemsDev : MonoBehaviour
 
     public void GiveGems()
     {
-        TotalGems += 1000000;
+        TotalGems += 999;
         PlayerPrefs.SetInt("totalDiamonds", TotalGems);
     }
 }
